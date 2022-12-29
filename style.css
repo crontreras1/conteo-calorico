@@ -1,0 +1,61 @@
+:root {
+    --azul-tripan: #480CA8;
+    --malaquita: #2EE657;
+    --violeta-rusa: #170533;
+    --feldgrau: #526656;
+    --zanahoria-naranja: #E6942E;
+    --blanco: white;
+    --lg: 20px;
+    --md: 16px;
+    --sm: 12px
+}
+body {
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.app-container {
+    width: 360px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid var(--azul-tripan); */
+}
+.app-container p {
+    font-size: var(--sm);
+    text-align: center;
+    width: 80%;
+    color: var(--violeta-rusa);
+}
+.logo {
+    width: 150px;
+    margin: 24px 0;
+}
+.genre-container {
+    display: flex;
+    justify-content: space-around;
+}
+.genre-container figure {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    display: flex;
+    border: 1px solid var(--azul-tripan);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.genre-container figure img {
+    width: 50px;
+    height: 50px;
+}
+.genre-container figure p {
+    color: var(--azul-tripan);
+    margin: 0;
+    font-size: var(--sm);
+    font-weight: bold;
+}
+.female-icon, .male-icon {
+}
