@@ -14,6 +14,7 @@ body {
     font-family: 'Nunito Sans', sans-serif;
     display: flex;
     justify-content: center;
+    background-color: var(--blanco);
 }
 .app-container {
     width: 360px;
@@ -27,6 +28,9 @@ body {
     text-align: center;
     width: 80%;
     color: var(--violeta-rusa);
+}
+.app-container p:nth-child(3) {
+    font-weight: bold;
 }
 .logo {
     width: 150px;
@@ -46,6 +50,11 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+    cursor: pointer;
+    background-color: var(--blanco);
+}
+.genre-container figure:hover {
+    background-color: #ded5ee;
 }
 .genre-container figure img {
     width: 50px;
@@ -57,5 +66,70 @@ body {
     font-size: var(--sm);
     font-weight: bold;
 }
-.female-icon, .male-icon {
+.form-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid var(--azul-tripan);
+    border-radius: 20px;
+    margin: 24px 0 0;
+    padding: 30px 0;
+    background-color: #ded5ee;
+}
+.form-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+/* .form-content .label-weight {
+    margin-top: 20px;
+} */
+.label-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.label-container label {
+    color: var(--violeta-rusa);
+    font-size: var(--sm);
+    margin: 10px 0 0;
+    font-weight: bold;
+
+}
+.form-content input {
+    color: var(--azul-tripan);
+    font-size: var(--sm);
+    margin-bottom: 15px;
+    font-family: 'Nunito Sans', sans-serif;
+    width: 97%;
+    border: 1px solid var(--violeta-rusa);
+    height: 25px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.button-container {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin: 25px 0;
+}
+.calc-button {
+    background-color: var(--azul-tripan);
+    color: var(--blanco);
+    font-family: 'Nunito Sans', sans-serif;
+    border: none;
+    width: 70%;
+    border-radius: 20px;
+    height: 50px;
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: var(--lg);
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+.calc-button:hover {
+    background-color: #ded5ee;
+    color: var(--azul-tripan);
+    border: 1px solid var(--azul-tripan);
 }
