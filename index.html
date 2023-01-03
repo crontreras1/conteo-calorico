@@ -22,15 +22,16 @@
 
         <p>Selecciona tu genero:</p>
 
+        <!-- Male and Female Buttons -->
         <section class="genre-container">
             
-            <figure>
+            <figure id="female-button">
                 <img src="./src/female-icon.png" alt="mujer" class="female-icon">
                 
                 <p>Femenino</p>
             </figure>
             
-            <figure>
+            <figure id="male-button">
                 <img src="./src/male-icon.png" alt="hombre" class="male-icon">
                 
                 <p>Masculino</p>
@@ -40,22 +41,22 @@
         <section class="form-container">
             <form class="form-content" action="">
                 <div class="label-container">
-                    <label class="label-weight">Peso en Kg:</label>
+                    <label for="inputWeigth" class="label-weight">Peso en Kg:</label>
                 </div>
 
-                <input placeholder="Escribe tu peso en Kilogramos" type="number" name="" id="">
+                <input placeholder="Escribe tu peso en Kilogramos" type="number" id="inputWeigth">
 
                 <div class="label-container">
-                    <label>Altura en Cm:</label>
+                    <label for="inputHeight">Altura en Cm:</label>
                 </div>
 
-                <input placeholder="Escribe tu altura en Centimetros" type="number" name="" id="">
+                <input placeholder="Escribe tu altura en Centimetros" type="number" id="inputHeight">
 
                 <div class="label-container">
-                    <label>Edad:</label>
+                    <label for="inputAge">Edad:</label>
                 </div>
 
-                <input placeholder="Escribe tu edad" type="number" name="" id="">
+                <input placeholder="Escribe tu edad" type="number" id="inputAge">
 
             </form>
         </section>
@@ -64,5 +65,7 @@
             <button class="calc-button">Calcular</button>
         </section>
     </div>
+
+    <script src="./index.js"></script>
 </body>
 </html>
